@@ -28,9 +28,14 @@ print(temperatura.replace('a', 'e')) #error
 
 weight = input("Weight: ")
 unit = input("(K)g or (L)bs: ")
-if unit == str("K") or str("k"):
+K = str("K")
+k = str("k")
+L = str("L")
+if unit == K or unit == k:
     print("Weight in kg: " + weight)
+elif unit == L:
+    print("Weight in lbs: " + str(float((weight)/2.2)))
 else:
     print("Error")
-elif unit == str("L") or str("l"):
-   print("Weight in kg:" + float(weight/2.2))
+#elif unit == str("L") or str("l"):
+ #  print("Weight in kg:" + float(weight/2.2))
