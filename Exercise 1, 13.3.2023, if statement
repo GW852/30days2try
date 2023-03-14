@@ -8,3 +8,14 @@ elif temperature > 10:
     print("It's a bit cold.")
 else:
     print("It's cold.")
+*****************************
+
+
+weight = input("Weight: ")
+unit = input("(K)g or (L)bs: ")
+if unit == str("K") or str("k"):
+    print("Weight in kg: " + weight)
+else:
+    print("Error")
+elif unit == str("L") or str("l"):
+   print("Weight in kg:" + float(weight/2.2))
