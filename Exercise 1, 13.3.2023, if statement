@@ -10,7 +10,7 @@ elif temperature > 10:
 else:
     print("It's cold.")
 *****************************
-#assume problem found when all codes are typed
+#assume problem found (wrong type temperature) when all codes are typed
 temperatura = float(input("temperatura: "))
 if temperatura > 35:
     print("It's a hot.")
@@ -25,7 +25,7 @@ print(temperatura.replace('a', 'e')) #error
 
 *****************************************
 #Exercise to cal. weight
-
+#can't define and cal. in a print?
 weight = input("Weight: ")
 unit = input("(K)g or (L)bs: ")
 K = str("K")
@@ -34,8 +34,27 @@ L = str("L")
 if unit == K or unit == k:
     print("Weight in kg: " + weight)
 elif unit == L:
-    print("Weight in lbs: " + str(float((weight)/2.2)))
+    print("Weight in lbs: " + str(float((weight)/2.2))) #ERROR
 else:
     print("Error")
-#elif unit == str("L") or str("l"):
- #  print("Weight in kg:" + float(weight/2.2))
+
+ 
+ #Below is a correct version
+weight = input("Weight: ")
+unit = input("(K)g or (L)bs: ")
+K = str("K")
+k = str("k")
+L = str("L")
+l = str("l")
+if unit == K or unit == k:
+    print("Weight in kg: " + weight)
+elif unit == L or unit == l:
+    weight_in_l = (float(weight) // 2.2)
+    print("Weight in lbs: " + str(weight_in_l))
+else:
+    print("Error")
+#1 inside str() have to add ""
+#2 Don't define variable in if/print command
+#3 In if statement, the equal sign is == (but no =)
+#4 Don't cal. in print command
+*********************************
