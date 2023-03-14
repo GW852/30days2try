@@ -1,3 +1,4 @@
+#13.3.2023
 #Teacher's version
 temperature = 40
 if temperature > 30:
@@ -38,8 +39,8 @@ elif unit == L:
 else:
     print("Error")
 
- 
- #Below is a correct version
+#14.3.2023
+#Below is a correct version
 weight = input("Weight: ")
 unit = input("(K)g or (L)bs: ")
 K = str("K")
