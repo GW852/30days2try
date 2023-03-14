@@ -1,10 +1,10 @@
-temperature = 25
+temperature = 40
 if temperature > 30:
-print("It's a hot day.")
-print("Drink plenty of water.")
+    print("It's a hot day.")
+    print("Drink plenty of water.")
 elif temperature> 20: #20-30
-print("It's a nice day.")
+    print("It's a nice day.")
 elif temperature > 10:
-print("It's a bit cold.")
+    print("It's a bit cold.")
 else:
-print("It's cold.")
+    print("It's cold.")
