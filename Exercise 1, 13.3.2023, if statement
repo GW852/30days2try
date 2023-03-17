@@ -59,3 +59,32 @@ else:
 #3 In if statement, the equal sign is == (but no =)
 #4 Don't cal. in print command
 *********************************
+
+# 16.3.2023, teacher+my version
+
+weight = float(input("Weight: "))
+unit = input("(K)g or (L)bs: ")
+if unit.upper() == "K":
+    print("Weight in kg: " + str(weight))
+elif unit.upper() == "L":
+    weight_in_l = str(weight // 2.2)
+    print("Weight in lbs: " + weight_in_l)
+else:
+    print("Error")
+    
+#1. use variable.upper() form input of both capital and lower case letter
+***************************************
+#16.3.2023, while loop
+
+i = 1
+while i <= 5:
+    print(i)
+    i = i+1
+# number CANNOT concatenate string 
+# number CAN *multiple by a string, that will repeat the string base on the value of the number
+i = 1
+while i <= 10:
+    print(i*'*')
+    i = i+1
+    
+******************************************************
